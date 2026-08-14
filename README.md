@@ -1,65 +1,104 @@
-🎬 Reprodutor de Vídeo iOS 6
-Um reprodutor de vídeo para Windows com interface nostálgica inspirada no design clássico do iOS 6. Desenvolvido em Python com PyQt, ele traz uma experiência retrô combinada com reprodução fluida de mídias.
+\# Reprodutor de Vídeo iOS 6
 
-🚀 Funcionalidades
-📱 Interface retrô estilo iOS 6: Barra de título e controles no estilo clássico.
 
-⏱️ Auto-hide automático: Os controles e a barra superior somem após 3 segundos sem movimento do mouse.
 
-🖱️ Cursor sempre visível: A seta do mouse permanece na tela para fácil navegação.
+Uma aplicação em Python que simula a interface clássica e nostálgica do reprodutor de mídia do iOS 6 para Windows, utilizando PyQt.
 
-⏸️ Modo de pausa inteligente: Os controles permanecem visíveis enquanto o vídeo estiver pausado.
 
-📂 Integração com o Windows: Suporte a parâmetros de linha de comando para abrir direto pelo menu "Abrir com".
 
-🛠️ Tecnologias Utilizadas
-Python 3
+O aplicativo oferece reprodução fluida de mídias com controles customizados, auto-hide inteligente e integração completa com o sistema operacional para abertura direta de arquivos.
 
-PyQt5
 
-PyInstaller
 
-📦 Como gerar o arquivo .exe
-Caso queira empacotar o projeto e gerar um executável próprio para o Windows:
+\---
 
-Instale o PyInstaller via terminal:
 
-DOS
-pip install pyinstaller
-Apague compilações anteriores (se houver):
 
-DOS
-rmdir /s /q build dist
-Execute o comando de compilação com ícone personalizado:
+\## 🚀 Funcionalidades
 
-DOS
-pyinstaller --noconsole --onefile --icon=icone.ico --name="Vídeos" player.py
-O seu executável pronto estará salvo na pasta dist/Vídeos.exe.
 
-⚙️ Como definir como Reprodutor Padrão no Windows
-Para que o Windows abra seus vídeos .mp4 diretamente com este aplicativo:
 
-Mova o arquivo Vídeos.exe para uma pasta definitiva no seu PC (ex: D:\\apps\\reprodutor de video pc).
+\- \*\*Interface Retrô iOS 6:\*\* Estilização visual fiel aos elementos de UI e controles clássicos do iOS 6.
 
-Clique com o botão direito em qualquer arquivo de vídeo .mp4.
+\- \*\*Controles com Auto-Hide:\*\* Barras de navegação e controles somem automaticamente após 3 segundos de inatividade do mouse.
 
-Selecione Abrir com > Escolher outro aplicativo.
+\- \*\*Modo de Pausa Inteligente:\*\* Mantém a interface visível permanentemente enquanto o vídeo estiver pausado.
 
-Na lista, clique em Escolha um aplicativo no seu PC (ou Procurar outro aplicativo neste PC).
+\- \*\*Cursor Dinâmico:\*\* Garantia de visibilidade contínua do cursor do mouse durante a navegação sobre o vídeo.
 
-Navegue até a pasta onde deixou o app e selecione o Vídeos.exe.
+\- \*\*Suporte a Linha de Comando (sys.argv):\*\* Aceita o caminho de arquivos de vídeo como parâmetro para integração com o menu "Abrir com" do Windows.
 
-Selecione a opção Sempre para associar permanentemente os arquivos de vídeo.
 
-📄 Licença
-Este projeto é livre para modificações e uso pessoal.
 
-Passo 2: Atualize no GitHub
-Salve o arquivo no Bloco de Notas e rode estes comandos no terminal:
+\---
 
-DOS
-git add README.md
-git commit -m "fix: ajusta formatacao do README"
-git push origin main
 
+
+\## 🛠️ Tecnologias Utilizadas
+
+
+
+\- \*\*Python 3\*\*
+
+\- \*\*PyQt5\*\* (Construção da interface gráfica, eventos e player de mídia)
+
+\- \*\*PyInstaller\*\* (Empacotamento do script Python em executável nativo do Windows)
+
+
+
+\---
+
+
+
+\## 📦 Como Gerar o Executável (.exe)
+
+
+
+\### Pré-requisitos
+
+
+
+Certifique-se de ter o PyInstaller instalado:
+
+
+
+`pip install pyinstaller`
+
+
+
+\### Compilação
+
+
+
+Para compilar o projeto gerando um executável único e com ícone personalizado, execute:
+
+
+
+`pyinstaller --noconsole --onefile --icon=icone.ico --name="Vídeos" player.py`
+
+
+
+O arquivo final será gerado dentro da pasta `dist/Vídeos.exe`.
+
+
+
+\---
+
+
+
+\## ⚙️ Configuração no Windows ("Abrir com")
+
+
+
+Para definir a aplicação como reprodutor padrão para arquivos de vídeo (.mp4):
+
+
+
+1\. Mova o arquivo `Vídeos.exe` para a pasta de sua preferência (ex: `D:\\apps\\reprodutor de video pc\\`).
+
+2\. Clique com o botão direito em qualquer arquivo `.mp4` > \*\*Abrir com\*\* > \*\*Escolher outro aplicativo\*\*.
+
+3\. Selecione \*\*Escolher um aplicativo no seu PC\*\*, navegue até a pasta e escolha o `Vídeos.exe`.
+
+4\. Marque a opção \*\*Sempre\*\* para vincular a extensão permanentemente.
 
